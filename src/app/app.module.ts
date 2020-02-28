@@ -4,17 +4,17 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { LayoutComponent } from './layout/layout.component';
 import { MatToolbarModule } from '@angular/material';
 import { StoreModule } from '@ngrx/store';
 import { reducers, metaReducers } from './reducers';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
-import { environment } from '../environments/environment'
+import { environment } from '../environments/environment';
+import { TaskComponent } from './task/task.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    LayoutComponent
+    TaskComponent
   ],
   imports: [
     BrowserModule,
